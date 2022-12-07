@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="normalize.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -14,54 +13,54 @@
   </head>
 
   <body>
-    <section class="nav-hero">
-      <!-- nav -->
-      <nav class="header-nav">
-        <div class="social-nav">
-          <img src="/image/insta.svg" alt="insta logo" />
-          <img src="/image/whatsup.svg" alt="whatsapp logo" />
-          <img src="/image/search.svg" alt="search logo" />
-        </div>
-        <div class="nav-btn">
-          <button id="btn-2">عضویت</button>
-          <button id="btn-1">ورود</button>
-        </div>
-        <ul class="list nav__list collapsible__content">
-          <li class="nav__item"><a href="#">خانه</a></li>
-          <li class="nav__item"><a href="#">خدمات</a></li>
-          <li class="nav__item"><a href="#">دوره ها</a></li>
-          <li class="nav__item"><a href="#">نمونه کار</a></li>
-          <li class="nav__item"><a href="#">دریافت سفارش</a></li>
-          <li class="nav__item"><a href="#">مقالات</a></li>
-          <li class="nav__item"><a href="#">سایر</a></li>
-        </ul>
+    <!-- nav -->
+    <nav class="header-nav">
+      <img id="logo-header" src="image/Logo_Header.svg" alt="logo" />
 
-        <img id="logo-header" src="image/Logo_Header.svg" alt="logo" />
-      </nav>
-      <!-- nav -->
+      <ul class="nav__list">
+        <li><a href="#">خانه</a></li>
+        <li><a href="#">خدمات</a></li>
+        <li><a href="#">دوره ها</a></li>
+        <li><a href="#">نمونه کار</a></li>
+        <li><a href="#">دریافت سفارش</a></li>
+        <li><a href="#">مقالات</a></li>
+        <li><a href="#">سایر</a></li>
+      </ul>
 
-      <!-- hero -->
+      <div class="nav-btn">
+        <button id="btn-1">ورود</button>
+        <button id="btn-2">عضویت</button>
+      </div>
+      <div class="social-nav">
+        <img src="/image/insta.svg" alt="insta logo" />
+        <img src="/image/whatsup.svg" alt="whatsapp logo" />
+        <img src="/image/search.svg" alt="search logo" />
+      </div>
+    </nav>
+    <!-- nav -->
 
-      <header class="hero">
-        <div class="hero-div">
-          <img
-            id="hero-image"
-            src="/image/Slider_Picture_2.svg"
-            alt="hero picture"
-          />
-          <div id="text-div">
-            <img id="text" src="/image/Slider_Text_1.svg" alt="" />
-            <p>جواب سوالت همین جاست</p>
-            <div id="arrow-div">
-              <img src="/image/arrow.svg" alt="arrow" />
-              <button>مشاوره رایگان</button>
-            </div>
+    <!-- hero -->
+
+    <header class="hero">
+      <div class="hero-div">
+        <div id="text-div">
+          <img id="text" src="/image/Slider_Text_1.svg" alt="" />
+          <p>جواب سوالت همین جاست</p>
+          <div id="arrow-div">
+            <button>مشاوره رایگان</button>
+            <img src="/image/arrow.svg" alt="arrow" />
           </div>
-          <img id="hero-wave" src="/image/Slider_Wave_1.svg" alt="" />
         </div>
-      </header>
-      <!-- hero -->
-    </section>
+        <img
+          id="hero-image"
+          src="/image/Slider_Picture_2.svg"
+          alt="hero picture"
+        />
+        <img id="hero-wave" src="/image/Slider_Wave_1.svg" alt="wave" />
+      </div>
+    </header>
+    <!-- hero -->
+
     <!-- sticky btns -->
 
     <a id="go-up" href="#"><img src="image/Go Up.svg" alt="go up" /></a>
@@ -83,19 +82,20 @@
           مشتریـان احتمالـی می کننـد اما همیـن شرکت ها ممکن است از بخش بسیار
           مهمی از وب سایت های خود یعنی صفحه درباره ما غفلت کنند.
         </p>
+
         <a href="#">
           درباره ما بیشتر بدانید <i class="chevron fa fa-chevron-left"></i
         ></a>
       </div>
-      <img src="image/about-background.svg" alt="about us" />
+      <img src="image/aboutUs.svg" alt="about us" />
     </div>
     <!-- about us -->
     <!-- service -->
     <div class="service-section">
       <div id="service-title">
         <img src="image/eyeGlass.svg" alt="eyeGlass" />
-        <h2>خدمات حرفه‌ای مانا افزار</h2>
-        <p>اینجــــا پنجــــره‌ای رو بــه دنیـــای پیشـــرفت است</p>
+        <h1>خدمات حرفه‌ای مانا افزار</h1>
+        <h2>اینجــــا پنجــــره‌ای رو بــه دنیـــای پیشـــرفت است</h2>
       </div>
       <div class="container-service">
         <div class="service">
@@ -143,6 +143,7 @@
             نیاز شما را به شکلی حرفه‌ای، کاملا اختـصــاصــی و متفـــاوت
             پـیــاده‌ســازی خواهیم کرد.
           </p>
+
           <a href="#"
             >توضیحات بیشتر<i class="chevron fa fa-chevron-left"></i
           ></a>
@@ -230,13 +231,221 @@
         </div>
       </div>
       <img id="service-wave" src="image/service-wave.svg" alt="wave" />
-      <img
-        id="service-backgrund"
-        src="image/service-background.svg"
-        alt="service-section"
-      />
     </div>
     <!-- service -->
-    <div class="love"></div>
+    <!-- sliding cards -->
+    <section class="sliding-cards">
+      <h2>جـدیـدتـریــن دوره‌هــــا</h2>
+      <h3>
+        ما در تلاشیم تا آموزشهای کاربردی را برای دوستداران به آموزش، مهیا سازیم.
+      </h3>
+      <img id="edu-hat" src="image/Education.svg" alt="hat" />
+      <ul class="slider-nav">
+        <li class="nav__item" data-filter="all">همه</li>
+        <li class="nav__item" data-filter="marketing">بازاریابی و فروش</li>
+        <li class="nav__item" data-filter="Personal-development">
+          توسعه فردی و موفقیت
+        </li>
+        <li class="nav__item" data-filter="techniques">تکنیک‌های مهندسی</li>
+        <li class="nav__item" data-filter="management">مدیریتی</li>
+        <li class="nav__item" data-filter="business">کسب و کار</li>
+        <li class="nav__item" data-filter="free">رایگان</li>
+        <div class="line"></div>
+      </ul>
+
+      <!-- sliding cards -->
+      <div class="container-slider">
+        <button class="pre-btn">
+          <div class="right-slide">
+            <img src="image/slider/badges/arrow.svg" alt="arrow" />
+          </div>
+        </button>
+        <button class="nxt-btn">
+          <div class="left-slide">
+            <img src="image/slider/badges/arrow.svg" alt="arrow" />
+          </div>
+        </button>
+        <div class="container-cards">
+          <!-- cards -->
+
+          <div class="card" data-item="Personal-development">
+            <div class="cards-header">
+              <div class="hearts-badge">
+                <img
+                  id="like-badge"
+                  src="image/slider/badges/heart.svg"
+                  alt="like"
+                />
+              </div>
+              <img src="image/slider/Picture(1).svg" alt="product images" />
+            </div>
+            <div class="title"><p>توسعه فردی و موفقیت</p></div>
+            <p id="card-p">
+              دوره آمـوزشـی مهـارت‌هـای حرفـه‌ای ارتباط بـا مشتریـان مختـص
+              کارکنان و فروشنده‌ها
+            </p>
+            <div class="price-timer">
+              <div class="timer">
+                <img src="image/slider/badges/clock.svg" alt="clock" />
+                <p>۰۳:۴۳:۰۵</p>
+              </div>
+              <div class="price"><p>۱۷۰,۰۰۰ تومان</p></div>
+            </div>
+
+            <button class="cards-btn">
+              <a>مشاهده دوره</a>
+              <i class="fa fa-chevron-left"></i>
+            </button>
+          </div>
+          <div class="card" data-item="marketing">
+            <div class="cards-header">
+              <div class="hearts-badge">
+                <img
+                  id="like-badge"
+                  src="image/slider/badges/heart.svg"
+                  alt="like"
+                />
+              </div>
+              <img src="image/slider/marketing.png" alt="product images" />
+            </div>
+            <div class="title"><p>بازاریابی و فروش</p></div>
+            <p id="card-p">
+              دیجیتال مارکتینگ: آموزش جامع بازاریابی دیجیتال در ایران
+            </p>
+            <div class="price-timer">
+              <div class="timer">
+                <img src="image/slider/badges/clock.svg" alt="clock" />
+                <p>۰۳:۴۳:۰۵</p>
+              </div>
+              <div class="price"><p>۱۷۰,۰۰۰ تومان</p></div>
+            </div>
+
+            <button class="cards-btn">
+              <a>مشاهده دوره</a>
+              <i class="fa fa-chevron-left"></i>
+            </button>
+          </div>
+          <div class="card" data-item="free">
+            <div class="cards-header">
+              <div class="hearts-badge">
+                <img
+                  id="like-badge"
+                  src="image/slider/badges/heart.svg"
+                  alt="like"
+                />
+              </div>
+              <img src="image/slider/seo.svg" alt="product images" />
+            </div>
+            <div class="title"><p>رایگان</p></div>
+            <p id="card-p">
+              | SEO چیست | آموزش بهینه سازی سایت برای موتورهای جستجو
+            </p>
+            <div class="price-timer">
+              <div class="timer">
+                <img src="image/slider/badges/clock.svg" alt="clock" />
+                <p>۰۳:۴۳:۰۵</p>
+              </div>
+              <div class="price"><p>۰ تومان</p></div>
+            </div>
+
+            <button class="cards-btn">
+              <a>مشاهده دوره</a>
+              <i class="fa fa-chevron-left"></i>
+            </button>
+          </div>
+          <div class="card" data-item="business">
+            <div class="cards-header">
+              <div class="hearts-badge">
+                <img
+                  id="like-badge"
+                  src="image/slider/badges/heart.svg"
+                  alt="like"
+                />
+              </div>
+              <img src="image/slider/Picture(7).svg" alt="product images" />
+            </div>
+            <div class="title"><p>کسب و کار</p></div>
+            <p id="card-p">
+              دوره آمــوزشــی اصــــول و قــوانیــــن نگارش چک (مطابق قوانیـن
+              جـدیـد)
+            </p>
+            <div class="price-timer">
+              <div class="timer">
+                <img src="image/slider/badges/clock.svg" alt="clock" />
+                <p>۰۳:۴۳:۰۵</p>
+              </div>
+              <div class="price"><p>۱۷۰,۰۰۰ تومان</p></div>
+            </div>
+
+            <button class="cards-btn">
+              <a>مشاهده دوره</a>
+              <i class="fa fa-chevron-left"></i>
+            </button>
+          </div>
+          <div class="card" data-item="management">
+            <div class="cards-header">
+              <div class="hearts-badge">
+                <img
+                  id="like-badge"
+                  src="image/slider/badges/heart.svg"
+                  alt="like"
+                />
+              </div>
+              <img src="image/slider/Picture(3).svg" alt="product images" />
+            </div>
+            <div class="title"><p>مدیریتی</p></div>
+            <p id="card-p">دوره آموزشی جـادوی سیستم‌سازی برای کسب وکار</p>
+            <div class="price-timer">
+              <div class="timer">
+                <img src="image/slider/badges/clock.svg" alt="clock" />
+                <p>۰۳:۴۳:۰۵</p>
+              </div>
+              <div class="price"><p>۱۷۰,۰۰۰ تومان</p></div>
+            </div>
+
+            <button class="cards-btn">
+              <a>مشاهده دوره</a>
+              <i class="fa fa-chevron-left"></i>
+            </button>
+          </div>
+          <div class="card" data-item="techniques">
+            <div class="cards-header">
+              <div class="hearts-badge">
+                <img
+                  id="like-badge"
+                  src="image/slider/badges/heart.svg"
+                  alt="like"
+                />
+              </div>
+              <img src="image/slider/Picture(2).svg" alt="product images" />
+            </div>
+            <div class="title"><p>تکنیک‌های مهندسی</p></div>
+            <p id="card-p">
+              دوره آمـوزشــی SPC کنتــرل فرآینــد آمــــــــــــــــاری
+              (Statistical Process Control)
+            </p>
+            <div class="price-timer">
+              <div class="timer">
+                <img src="image/slider/badges/clock.svg" alt="clock" />
+                <p>۰۳:۴۳:۰۵</p>
+              </div>
+              <div class="price"><p>۱۷۰,۰۰۰ تومان</p></div>
+            </div>
+
+            <button class="cards-btn">
+              <a>مشاهده دوره</a>
+              <i class="fa fa-chevron-left"></i>
+            </button>
+          </div>
+
+          <!-- cards -->
+        </div>
+      </div>
+      <img id="edu-back" src="image/edu-back.svg" alt="background" />
+    </section>
+
+    <!-- sliding cards -->
+    <div class="space"></div>
+    <script src="slide.js"></script>
   </body>
 </html>
