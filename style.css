@@ -228,15 +228,15 @@ nav ul li:hover {
 
 #javid {
   position: fixed;
-  top: 55rem;
-  left: 130rem;
+  top: 70%;
+  left: 90%;
   z-index: 10;
   width: 14rem;
 }
 #go-up {
   position: fixed;
-  top: 60rem;
-  left: 7rem;
+  top: 80%;
+  left: 4%;
   z-index: 10;
   width: 3rem;
 }
@@ -526,16 +526,17 @@ nav ul li:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   left: 7%;
   top: 3%;
   background-color: #ef476e85;
-  border-radius: 10px;
+  border-radius: 50%;
   z-index: 2;
 }
 #like-badge {
   width: 2.5rem;
+  margin-top: 0.2rem;
   z-index: 2;
   cursor: pointer;
 }
@@ -672,13 +673,13 @@ nav ul li:hover {
 .pre-btn img,
 .nxt-btn img {
   opacity: 0.2;
-  width: 2rem;
+  width: 1.5rem;
 }
 
 .pre-btn:hover img,
 .nxt-btn:hover img {
   opacity: 1;
-  width: 2.4rem;
+  width: 1.8rem;
   transition: all 0.5s ease;
 }
 
@@ -692,8 +693,148 @@ nav ul li:hover {
   align-items: center;
   justify-content: center;
 }
-
+.slider-btn {
+  margin: auto;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.8rem;
+  background-color: #f6f6f6;
+  border: 0.2rem solid #e2e2e2e7;
+  cursor: pointer;
+  box-shadow: 0px 0.2rem 0.5rem rgba(33, 33, 33, 0.1);
+}
+.slider-btn a {
+  color: var(--color-font2);
+  font-weight: 600;
+  width: 100%;
+  padding: 0.8rem 3.5rem 0.8rem 3.5rem;
+}
+.slider-wave {
+  display: flex;
+  max-width: 100%;
+}
 /* slider & filter */
+/* portofolio */
+.portofolio-section {
+  background-image: url("image/portofolio/background-portofolio.svg");
+  background-color: var(--color-secondary);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  max-width: 100%;
+  max-height: 80rem;
+  margin: auto;
+  padding: 0;
+}
+.portofolio-title h3,
+.portofolio-title p {
+  color: #fff;
+}
+.portofolio-title h3 {
+  font-weight: 400;
+  font-size: 3.2rem;
+}
+.portofolio-title p {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: 1.5rem;
+  margin-bottom: 5rem;
+}
+.portofolio-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 14rem 0 14rem;
+}
+.portofolio-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portofolio-card img {
+  max-width: 38rem;
+  max-height: 28.5rem;
+  border-radius: 5rem;
+}
+.portofolio-card a {
+  width: 32rem;
+  height: 8rem;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 2.5rem 0 2.5rem;
+  align-items: center;
+  top: 83%;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--color-font1);
+  cursor: pointer;
+  border: none;
+  border-radius: 4rem;
+  box-shadow: 0px 0px 30px rgba(33, 33, 33, 0.3);
+  background-color: #fff;
+}
+.portofolio-card a:hover {
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    var(--color-btn1) 0%,
+    var(--color-primary) 100%
+  );
+  transition: all 1s ease;
+}
+
+.portofolio-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #06d6a0;
+  width: 4rem;
+  height: 4rem;
+  border-radius: var(--border-radius);
+}
+.portofolio-arrow img {
+  width: 1.7rem;
+}
+.portofolio-btn {
+  cursor: pointer;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee00;
+  top: 10rem;
+  width: 23.2rem;
+  height: 5rem;
+  color: #fff;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  border: 0.2rem solid #fff;
+  border-radius: 1rem;
+}
+.portofolio-btn:hover {
+  background-color: #fff;
+  color: var(--color-secondary);
+  font-weight: 600;
+  border: 0.3rem solid var(--color-secondary);
+  transition: all 1s ease;
+}
+
+/* portofolio */
 .space {
   height: 20rem;
 }
