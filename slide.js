@@ -46,27 +46,3 @@ heart.forEach(heart => {
   })
 });
 
-
-window.onload = function (loadEvent) {
-  const USERS_URL = "https://jsonplaceholder.typicode.com/users";
-  const dropDownContent = document.getElementsByClassName("dropdown-content")[0];
-
-  function createUserLink(user){
-    const aTag = document.createElement('a');
-    aTag.textContent = `${user.name} (${user.email})`;
-    aTag.href = `https://${user.website}`;
-    aTag.target = "_blank";
-    return aTag;
-  }
-
-  fetch(USERS_URL).then(data => {
-    return data.json()
-  }).then(jsonData => {
-    if(jsonData.length > 0) {
-      for(let user of jsonData){
-        const tag = createUserLink(user);
-        dropDownContent.append(tag);
-      }
-    }
-  }).catch(e => console.log("there was an error ", e))
-}
