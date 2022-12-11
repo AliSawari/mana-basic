@@ -63,6 +63,7 @@ p {
 @media screen and (min-width: 1024px) {
   body {
     font-size: 1.8rem;
+    background-color: #f6f6f6;
   }
   h1 {
     font-size: 8rem;
@@ -141,7 +142,7 @@ nav ul li:hover {
   gap: 10px;
   padding: 0.9rem 10px;
   border: none;
-  background-color: #fff;
+  background-color: #f6f6f6;
 }
 #btn-2 {
   border: none;
@@ -220,7 +221,8 @@ nav ul li:hover {
 
 #hero-wave {
   position: absolute;
-  top: 44%;
+  bottom: 0;
+  left: 0;
   z-index: -1;
 }
 
@@ -228,40 +230,36 @@ nav ul li:hover {
 
 #javid {
   position: fixed;
-  top: 70%;
-  left: 90%;
+  bottom: 10rem;
+  right: -1rem;
   z-index: 10;
   width: 14rem;
 }
 #go-up {
   position: fixed;
-  top: 80%;
-  left: 4%;
+  bottom: 10rem;
+  left: 3rem;
   z-index: 10;
   width: 3rem;
 }
 /* about us */
 .about-us {
+  background-image: url(image/aboutUs.svg);
+  background-color: #efefef;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   direction: rtl;
   width: 100%;
+  height: 40rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 10rem;
   padding: 0;
   margin: 0;
-  margin-bottom: 25rem;
 }
 
-.about-us img {
-  position: absolute;
-  width: 100%;
-  top: -66%;
-  margin-bottom: 3rem;
-  z-index: -1;
-  overflow: hidden;
-}
 #about-p {
   color: var(--color-font1);
   float: left;
@@ -509,9 +507,11 @@ nav ul li:hover {
   overflow: hidden;
   max-height: 8rem;
   margin: 0;
+  margin-top: 0.7em;
   font-size: 1.6rem;
   padding: 0 1rem 0 1rem;
   color: var(--color-font1);
+  text-align: start;
 }
 .cards-header {
   height: 50%;
@@ -841,22 +841,8 @@ nav ul li:hover {
   border: 0.3rem solid var(--color-secondary);
   transition: all 1s ease;
 }
-/* form */
-input[type="file"] {
-  display: none;
-}
-.input-file {
-  border: 1px solid #ccc;
-  display: inline-block;
-  padding: 6px 12px;
-  cursor: pointer;
-}
-/* form */
 /* portofolio */
-.space {
-  height: 20rem;
-}
-
+/* form */
 .form-section {
   background-image: url("image/form-background.svg");
   background-color: #f6f6f6;
@@ -873,6 +859,13 @@ input[type="file"] {
   height: 85rem;
   margin: auto;
   padding: 0;
+}
+#form-phone {
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  top: 3rem;
+  right: 8rem;
 }
 
 .form-title h3 {
@@ -1003,6 +996,15 @@ textarea {
   border: none;
   border-radius: 10px;
 }
+input[type="file"] {
+  display: none;
+}
+.input-file {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
 
 #form-p {
   font-size: 1.4rem;
@@ -1030,9 +1032,10 @@ textarea {
 }
 .form-section img {
   position: absolute;
-  top: 88%;
+  bottom: 0;
+  margin: 0;
 }
-
+/* form */
 /*comment secton */
 .comment__section {
   direction: ltr;
@@ -1186,4 +1189,194 @@ textarea {
 }
 .carousel__indicator.current-slide {
   background-color: var(--color-secondary);
+}
+
+/* blog */
+
+#blog-books {
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  top: 4rem;
+  left: 4rem;
+}
+#blog-wave {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.timer.blog-timer {
+  position: absolute;
+  top: 42%;
+  height: 3rem;
+}
+.timer.blog-timer p {
+  font-size: 1.4rem;
+}
+#blog-h2 {
+  padding-top: 6rem;
+}
+.sliding-cards.blog-section {
+  background-color: transparent;
+  margin: 0;
+}
+/* email section */
+.email__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 14rem 10rem 14rem;
+}
+.logo-about img {
+  width: 15rem;
+  height: 5rem;
+}
+.email-social {
+  gap: 1.5rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.email-social input,
+.email-social label {
+  margin-right: 1rem;
+  display: flex;
+  position: relative;
+  width: 58rem;
+  height: 5rem;
+  border: none;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.email-social button {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 10rem;
+  background-color: var(--color-secondary);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.6rem;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+}
+
+.social_footer {
+  gap: 1.5rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.social_footer a img {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+.logo-about {
+  gap: 1.5rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.logo-about p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-font1);
+}
+/* footer */
+.footer {
+  background-color: #eeeeee;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-right: 14rem;
+  width: 100%;
+  height: 42rem;
+}
+
+.footer--navs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* footer */
+
+.footer-badges {
+  width: 2rem;
+  height: 2rem;
+}
+.footer__nav {
+  width: 28rem;
+  height: 35rem;
+}
+.footer__nav h4 {
+  color: var(--color-secondary);
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+.footer__nav li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  line-height: 2.8rem;
+  color: var(--color-font1);
+  list-style: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.footer__logos {
+  position: absolute;
+  left: 8rem;
+  top: 11rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 28rem;
+  height: 13rem;
+}
+.footer__logos img {
+  width: 13rem;
+  height: 13rem;
+}
+
+#footer-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.footer-line {
+  background-color: #eeeeee;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.footer-line p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-font2);
+}
+.footer-line p a {
+  color: #118ab2;
 }
