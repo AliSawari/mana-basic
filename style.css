@@ -10,16 +10,7 @@
   --color-body-darker: #e0e0e0;
   --border-radius: 30px;
 }
-/* responsive */
-@media screen and (max-width: 1024px) {
-  p {
-    font-size: 1rem;
-  }
-}
 
-@media screen and (max-width: 768px) {
-}
-/* repsonisve */
 *,
 *::after,
 *::before {
@@ -28,7 +19,7 @@
 body {
   width: 100%;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: #f5f5f5;
 }
 
 img {
@@ -63,7 +54,6 @@ p {
 @media screen and (min-width: 1024px) {
   body {
     font-size: 1.8rem;
-    background-color: #f6f6f6;
   }
   h1 {
     font-size: 8rem;
@@ -215,8 +205,11 @@ nav ul li:hover {
   );
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.text-div {
+  width: 40%;
+}
 #hero-image {
-  max-width: 58rem;
+  width: 40%;
 }
 
 #hero-wave {
@@ -880,6 +873,7 @@ nav ul li:hover {
   color: var(--color-font2);
 }
 .form {
+  width: 100%;
   height: 65rem;
   position: relative;
   display: flex;
@@ -1327,7 +1321,7 @@ input[type="file"] {
 }
 .footer__nav {
   width: 28rem;
-  height: 35rem;
+  height: 37rem;
 }
 .footer__nav h4 {
   color: var(--color-secondary);
@@ -1335,6 +1329,7 @@ input[type="file"] {
   margin-bottom: 1.5rem;
 }
 .footer__nav li {
+  gap: 0.4rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
