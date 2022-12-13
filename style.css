@@ -16,10 +16,12 @@
 *::before {
   box-sizing: border-box;
 }
+
 body {
   width: 100%;
   line-height: 1.5;
   background-color: #f5f5f5;
+  overflow-x: hidden;
 }
 
 img {
@@ -74,6 +76,7 @@ p {
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 a {
@@ -84,6 +87,24 @@ a {
 }
 
 /* navigation header */
+/* nav mobile */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  height: 5rem;
+  width: 5;
+  margin-right: 2rem;
+  display: none;
+}
+.btn-mobile-nav img {
+  width: 5rem;
+  height: 5rem;
+}
+.menu-close {
+  display: none;
+}
+/* nav mobile */
 
 #logo-header {
   width: 24rem;
@@ -92,6 +113,8 @@ a {
 .social-nav {
   display: flex;
   gap: 1rem;
+  margin: 0;
+  cursor: pointer;
 }
 .header-nav {
   display: flex;
@@ -99,6 +122,7 @@ a {
   width: 100%;
   height: 10rem;
   flex-wrap: wrap;
+  padding: 0;
   align-items: center;
 }
 
@@ -110,6 +134,8 @@ a {
   opacity: 1;
   gap: 3rem;
   margin: 1rem;
+  display: flex;
+  align-items: center;
 }
 nav ul li {
   list-style-type: none;
@@ -1009,8 +1035,8 @@ input[type="file"] {
 }
 #submit-btn {
   position: absolute;
-  left: 82%;
-  top: 95%;
+  bottom: -3%;
+  right: 15%;
   width: 18.6rem;
   height: 5rem;
   border: none;
@@ -1047,6 +1073,7 @@ input[type="file"] {
   width: 100%;
   height: 50rem;
 }
+
 #quote-up,
 #quote-down {
   position: absolute;
@@ -1083,12 +1110,16 @@ input[type="file"] {
   direction: ltr;
   position: relative;
   background-color: transparent;
-  width: 88rem;
+  width: 57%;
   height: 19rem;
   margin: 0 auto;
   margin-top: 5rem;
   z-index: 1;
 }
+.is-hidden {
+  display: none;
+}
+
 .carousel__track-countainer {
   background-color: transparent;
   height: 100%;
@@ -1111,7 +1142,7 @@ input[type="file"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 78rem;
+  width: 100%;
   height: 18rem;
   border-radius: 3rem;
   left: 0;
@@ -1150,6 +1181,7 @@ input[type="file"] {
   justify-content: center;
   align-items: center;
   transform: translateY(-50%);
+
   background: var(--color-btn1);
   border: 0;
   cursor: pointer;
