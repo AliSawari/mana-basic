@@ -15,7 +15,7 @@
 
   <body>
     <!-- nav -->
-    <nav class="header-nav nav-open">
+    <nav class="header-nav">
       <button class="btn-mobile-nav">
         <img class="menu-open" src="image/menu-outline.svg" alt="menu" />
         <img class="menu-close" src="image/close-outline.svg" alt="menu" />
@@ -36,9 +36,18 @@
         </div>
       </ul>
       <div class="social-nav">
-        <img src="/image/insta.svg" alt="insta logo" />
-        <img src="/image/whatsup.svg" alt="whatsapp logo" />
-        <img src="/image/search.svg" alt="search logo" />
+        <a class="social-link-i" href="#">
+          <img src="/image/insta.svg" alt="insta logo"
+        /></a>
+        <a class="social-link-W" href="#">
+          <img src="/image/whatsup.svg" alt="whatsapp logo"
+        /></a>
+        <div class="search">
+          <input type="text" class="inputSearch" placeholder=" جستجو کن ..." />
+          <button class="btnSearch">
+            <img src="/image/search.svg" alt="search logo" />
+          </button>
+        </div>
       </div>
     </nav>
     <!-- nav -->
@@ -650,7 +659,7 @@
         </p>
       </div>
       <div class="carousel">
-        <button class="carousel__button carousel__button--left is-hidden">
+        <button disabled class="carousel__button carousel__button--left">
           <img src="image/carousel-img/leftArrow.svg" alt="left" />
         </button>
         <div class="carousel__track-countainer">

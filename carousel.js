@@ -25,6 +25,19 @@ const updateDots = (currentDot, targetDot) => {
   targetDot.classList.add('current-slide');
 }
 
+const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
+
+  if (targetIndex === 0) {
+    prevButton.disabled = true
+    nextButton.disabled = false
+  } else if (targetIndex === slides.length - 1) {
+    prevButton.disabled = false
+    nextButton.disabled = true
+  } else {
+    prevButton.disabled = false
+    nextButton.disabled = false
+  }
+}
 
 
 //click right,move slide to right
@@ -61,8 +74,10 @@ dotsNav.addEventListener('click', e => {
   const currentDot = dotsNav.querySelector('.current-slide');
   const targetIndex = dots.findIndex(dot => dot === targetDot);
   const targetSlide = slides[targetIndex];
+
   moveToSlide(track, currentSlide, targetSlide);
   updateDots(currentDot, targetDot);
   hideShowArrows(slides, prevButton, nextButton, targetIndex);
 
 });
+
