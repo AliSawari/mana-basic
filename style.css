@@ -809,7 +809,7 @@ nav ul li:hover {
   justify-items: center;
   text-align: center;
   max-width: 100%;
-  max-height: 80rem;
+  height: 60rem;
   margin: auto;
   padding: 0;
 }
@@ -933,7 +933,7 @@ nav ul li:hover {
   justify-content: center;
   justify-items: center;
   text-align: center;
-  max-width: 100%;
+  width: 100%;
   height: 85rem;
   margin: auto;
   padding: 0;
@@ -1095,7 +1095,7 @@ input[type="file"] {
 #submit-btn {
   position: absolute;
   bottom: -3%;
-  right: 15%;
+  right: 11%;
   width: 18.6rem;
   height: 5rem;
   border: none;
@@ -1311,7 +1311,8 @@ input[type="file"] {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 5rem 14rem 10rem 14rem;
+  padding: 5rem 14rem 10rem 10rem;
+  gap: 2rem;
 }
 .logo-about img {
   width: 15rem;

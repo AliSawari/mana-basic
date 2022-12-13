@@ -124,8 +124,8 @@
   }
   .about-us p {
     font-size: 1.6rem;
-    margin-left: 2.5rem;
   }
+
   #javid {
     width: 8rem;
     right: 0;
@@ -166,7 +166,8 @@
   #form-phone {
     width: 9rem;
     height: 9rem;
-    top: 2rem;
+
+    top: -3.5%;
   }
   .radio-cards label {
     font-size: 1.3rem;
@@ -183,17 +184,22 @@
     right: 4rem;
     width: 16rem;
   }
+  .carousel {
+    width: 100;
+    height: 28rem;
+  }
   .carousel__track-countainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
+    height: 28rem;
   }
   .carousel__track {
-    width: 80%;
+    width: 88%;
+    height: 28rem;
   }
   .carousel__slide {
-    width: 100%;
+    width: 88%;
+    padding: 0 2.5rem 0 2.5rem;
+    height: 28rem;
   }
   #blog-books {
     width: 8rem;
@@ -237,6 +243,18 @@
 }
 
 @media (max-width: 52em) {
+  h3,
+  h2 {
+    padding: 0 2rem 0 2rem;
+  }
+  #about-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    width: 58rem;
+  }
   .btn-mobile-nav {
     display: block;
   }
@@ -286,7 +304,7 @@
   }
   .nav-btn {
     position: absolute;
-    top: 10rem;
+    top: 8rem;
     align-items: center;
     width: 93%;
     justify-content: space-between;
@@ -315,5 +333,210 @@
   }
   .nav-open .btn-mobile-nav .menu-open {
     display: none;
+  }
+}
+@media (max-width: 52em) {
+  .carousel {
+    width: 100%;
+    height: 30rem;
+  }
+  .carousel__track-countainer {
+    width: 100%;
+    height: 30rem;
+  }
+  .carousel__track {
+    width: 98%;
+    height: 30rem;
+  }
+  .carousel__slide {
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    text-align: center;
+    padding: 0 2.5rem 0 2.5rem;
+    height: 30rem;
+  }
+
+  .carousel__slide img {
+    margin: 0;
+    position: absolute;
+    top: 1rem;
+    width: 14rem;
+    height: 14rem;
+    border: 0.4rem solid #118ab28b;
+    border-radius: 50%;
+  }
+  .carousel__slide-title {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 37em) {
+  #logo-header {
+    z-index: 4;
+
+    width: 18rem;
+
+    height: 8rem;
+  }
+  .btn-mobile-nav {
+    width: 4rem;
+  }
+  .btn-mobile-nav img {
+    width: 4rem;
+  }
+  .hero-div {
+    flex-direction: column;
+  }
+  #text-div {
+    width: 100%;
+  }
+  #text-div p {
+    font-size: 2.5rem;
+    padding-right: 6rem;
+  }
+  #arrow-div {
+    justify-content: center;
+    gap: 2rem;
+  }
+  #arrow-div img {
+    padding-top: 4rem;
+    width: 12rem;
+    height: 10rem;
+  }
+  #text {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #hero-image {
+    width: 100%;
+  }
+  .about-us {
+    background-image: url(image/about-mobile.svg);
+    background-color: #efefef;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50rem;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-us p {
+    width: 70%;
+
+    padding: 0 3rem 0 3rem;
+  }
+  .container-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+  }
+  .service {
+    width: 90%;
+    height: 28rem;
+    font-size: 2rem;
+  }
+  .badge {
+    top: -25%;
+    left: 39%;
+    width: 12rem;
+    height: 12rem;
+  }
+  #service-title {
+    position: relative;
+  }
+  #service-title img {
+    right: 10%;
+    top: -180%;
+    position: absolute;
+  }
+  .service p {
+    font-size: 1.7rem;
+    line-height: 3rem;
+  }
+  #edu-hat {
+    top: -12%;
+  }
+  .portofolio-cards {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .portofolio-section {
+    height: 100%;
+  }
+  .portofolio-card a {
+    font-size: 2rem;
+  }
+
+  .form-title p {
+    padding: 0 2rem 0 2rem;
+  }
+  .form-section {
+    height: 138rem;
+  }
+  .form {
+    height: 116rem;
+  }
+  .radio-section {
+    flex-direction: column;
+  }
+  .radio-cards {
+    width: 35rem;
+    height: 23rem;
+  }
+  .radio-cards label {
+    font-size: 1.8rem;
+  }
+  #quote-up {
+    top: 26%;
+  }
+
+  #blog-books {
+    top: -2%;
+  }
+  .email__section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .logo-about {
+    width: 100%;
+  }
+  .email-social {
+    width: 100%;
+  }
+  .footer {
+    height: 130rem;
+  }
+  .footer__nav {
+    width: 100%;
+    text-align: center;
+  }
+  .footer--navs {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 130rem;
+  }
+  .footer__logos {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .footer__nav li {
+    padding: 0 5rem 0 5rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 21em) {
+  .carousel__slide img {
+    width: 10rem;
+    height: 10rem;
   }
 }
