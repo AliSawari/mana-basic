@@ -535,6 +535,9 @@
   }
 }
 @media (max-width: 21em) {
+  html {
+    font-size: 40%;
+  }
   .carousel__slide img {
     width: 10rem;
     height: 10rem;
