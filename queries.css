@@ -542,4 +542,29 @@
     width: 10rem;
     height: 10rem;
   }
+  #logo-header {
+    z-index: 4;
+
+    width: 12rem;
+
+    height: 4rem;
+  }
+  .social-nav {
+    margin: 0;
+    gap: 1px;
+    padding: 0;
+  }
+  .social-nav img {
+    width: 1.8rem;
+  }
+  .btn-mobile-nav {
+    width: 2rem;
+    margin: 0;
+  }
+  .btn-mobile-nav img {
+    width: 2rem;
+  }
+  .menu-open {
+    width: 2rem;
+  }
 }
