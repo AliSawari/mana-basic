@@ -196,12 +196,12 @@ a {
   display: flex;
   align-items: center;
 }
-nav ul li {
+.header-nav ul li {
   list-style-type: none;
   color: var(--color-font2);
   display: flex;
 }
-nav ul li:hover {
+.header-nav ul li:hover {
   list-style-type: none;
   color: var(--color-secondary);
 }
